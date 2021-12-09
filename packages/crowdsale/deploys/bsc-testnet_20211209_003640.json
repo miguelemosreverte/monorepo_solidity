@@ -1,0 +1,218 @@
+{
+  "network": "bsc-testnet",
+  "codeHash": "0x181e63dff1d1b169cfae43ea28d9997feb0ed43e2fd89ca87de341486e582f2b",
+  "array": [
+    "Aca estamos con Franco de nuevo!",
+    "1",
+    "0xba776273e7290b5491ca69584f3384ae0c25daa4",
+    "0x29df7b88d6ce0bb73ab4ab81425f85d8eab794b6"
+  ],
+  "json": {
+    "pName": "Aca estamos con Franco de nuevo!",
+    "pRate": "1",
+    "pWallet": "0xba776273e7290b5491ca69584f3384ae0c25daa4",
+    "pToken": "0x29df7b88d6ce0bb73ab4ab81425f85d8eab794b6"
+  },
+  "obj": {
+    "pName": {
+      "type": "string",
+      "value": "Aca estamos con Franco de nuevo!"
+    },
+    "pRate": {
+      "type": "uint256",
+      "value": "1"
+    },
+    "pWallet": {
+      "type": "address",
+      "value": "0xba776273e7290b5491ca69584f3384ae0c25daa4"
+    },
+    "pToken": {
+      "type": "address",
+      "value": "0x29df7b88d6ce0bb73ab4ab81425f85d8eab794b6"
+    }
+  },
+  "empty": false,
+  "receipt": {
+    "to": null,
+    "from": "0xba776273E7290B5491cA69584f3384ae0c25Daa4",
+    "contractAddress": "0x3Ca580831854Edef5396fFB901F05a80110B136c",
+    "transactionIndex": 0,
+    "gasUsed": "885620",
+    "logsBloom": "0x00000000000000000000000000020000000040000000000100000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x2c840ec91a19bce55603939b770127eb0756dbbc389681c3113da0e40ac89c42",
+    "transactionHash": "0x14f1d44112a96118b283cd587f6304d401adca257416dc0fbb6f40694669c9a5",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 14808152,
+        "transactionHash": "0x14f1d44112a96118b283cd587f6304d401adca257416dc0fbb6f40694669c9a5",
+        "address": "0x3Ca580831854Edef5396fFB901F05a80110B136c",
+        "topics": [
+          "0x9c03d070f5f0dc6c2be7df7fdb0bbbca474397b141bf31290a571abc3db29604",
+          "0x000000000000000000000000ba776273e7290b5491ca69584f3384ae0c25daa4"
+        ],
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000234372656174656420636f6e747261637420666f722063726f776473616c6521202d2d200000000000000000000000000000000000000000000000000000000000",
+        "logIndex": 0,
+        "blockHash": "0x2c840ec91a19bce55603939b770127eb0756dbbc389681c3113da0e40ac89c42"
+      }
+    ],
+    "blockNumber": 14808152,
+    "cumulativeGasUsed": "885620",
+    "status": 1,
+    "type": 0,
+    "byzantium": true
+  },
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "pName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pRate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address payable",
+          "name": "pWallet",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IERC20",
+          "name": "pToken",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "message",
+          "type": "string"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "DEBUG",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "purchaser",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "TokensPurchased",
+      "type": "event"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    },
+    {
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "wallet",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "rate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "weiRaised",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        }
+      ],
+      "name": "buyTokens",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ]
+}

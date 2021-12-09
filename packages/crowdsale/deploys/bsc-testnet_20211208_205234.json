@@ -1,0 +1,168 @@
+{
+  "network": "bsc-testnet",
+  "codeHash": "0xc37cd776507e7f37b29fdeb028c9e7891e84d35daa2efc774759b143be186d5f",
+  "array": [
+    "100",
+    "0xba776273e7290b5491ca69584f3384ae0c25daa4",
+    "0x802A8E68e186A90dDd51c2ab29C9112Df7466f20"
+  ],
+  "json": {
+    "pRate": "100",
+    "pWallet": "0xba776273e7290b5491ca69584f3384ae0c25daa4",
+    "pToken": "0x802A8E68e186A90dDd51c2ab29C9112Df7466f20"
+  },
+  "obj": {
+    "pRate": {
+      "type": "uint256",
+      "value": "100"
+    },
+    "pWallet": {
+      "type": "address",
+      "value": "0xba776273e7290b5491ca69584f3384ae0c25daa4"
+    },
+    "pToken": {
+      "type": "address",
+      "value": "0x802A8E68e186A90dDd51c2ab29C9112Df7466f20"
+    }
+  },
+  "empty": false,
+  "receipt": {
+    "to": null,
+    "from": "0xba776273E7290B5491cA69584f3384ae0c25Daa4",
+    "contractAddress": "0x94F450aDCe2FFB4369C2CFBC930b4D19C56462c3",
+    "transactionIndex": 4,
+    "gasUsed": "680014",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xed6e04d1910acdb617cf8c99378955e5d479704a3282f1e4671886e8e418515f",
+    "transactionHash": "0x4fd536d40f8af35dccd47108324219c9031eed2f8201008df389a71ae48a0120",
+    "logs": [],
+    "blockNumber": 14803670,
+    "cumulativeGasUsed": "3996054",
+    "status": 1,
+    "type": 0,
+    "byzantium": true
+  },
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "pRate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address payable",
+          "name": "pWallet",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IERC20",
+          "name": "pToken",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "purchaser",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "TokensPurchased",
+      "type": "event"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    },
+    {
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "wallet",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "rate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "weiRaised",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        }
+      ],
+      "name": "buyTokens",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ]
+}
